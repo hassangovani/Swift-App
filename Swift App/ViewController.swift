@@ -14,18 +14,23 @@ class ViewController: UIViewController {
     
     var tapCount = 0
     
+    @IBOutlet weak var text1: UITextField!
+    
+    @IBOutlet weak var text2: UITextField!
+    
+  
+    
     @IBAction func button1(_ sender: Any) {
         
-            tapCount = tapCount + 1
-        
-            label.text = "You tapped the button \(tapCount) times now"
-        
+        label.text = "\(Int(text1.text!)! + Int(text2.text!)!)"
         
         
     }
     
+   
     @IBAction func button2(_ sender: Any) {
-        label.text = "Hello World"
+        
+        
     }
     
     override func viewDidLoad() {
